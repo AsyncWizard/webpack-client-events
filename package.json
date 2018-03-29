@@ -1,0 +1,43 @@
+{
+  "name": "webpack-client-events",
+  "version": "0.1.0",
+  "description": "Emit events when webpack request or load async chunks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsyncWizard/webpack-client-events.git"
+  },
+  "keywords": [
+    "webpack",
+    "client",
+    "events",
+    "hooks",
+    "promise"
+  ],
+  "author": "AsyncWizard",
+  "homepage": "https://github.com/AsyncWizard/webpack-client-events#readme",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eventemitter2": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 4.3 < 5.0.0 || >= 5.10"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AsyncWizard/webpack-client-events/issues"
+  }
+}
