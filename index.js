@@ -2,11 +2,9 @@ const EventEmitter = require('eventemitter2').EventEmitter2
 const defaultChunkRx = /\/([^/]+)\.js$/
 const noop = function () {}
 
-export default class {
+export default class extends EventEmitter {
   constructor () {
-    // Proto chaining inheritance
-    // eslint-disable-next-line no-proto
-    this.__proto__.__proto__ = new EventEmitter()
+    super()
     this.chunkRx = defaultChunkRx
     this._observer = new window.MutationObserver(mutations => {
       for (let mutationRecord of mutations) {
